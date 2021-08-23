@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Assets",
+    "\\Assets\\js"
   ],
+  "SelectedNode": "\\Assets\\js\\script.js",
   "PreviewInSolutionExplorer": false
 }
