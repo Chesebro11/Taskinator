@@ -15,6 +15,13 @@ var taskFormHandler = function (event) {
     };
     // send it as an argument to createTaskEl
     createTaskEl(taskDataObj);
+
+    if (!taskNameInput || !taskTypeInput) {
+        alert("You need to fill out the task form!");
+        return false;
+    }
+
+    formEl.reset();
     
 };
 
@@ -29,7 +36,7 @@ var createTaskEl = function(taskDataObj) {
     // add HTML content to div
     taskInfoEl.innerHTML = "<h3 class='task-name'>" + taskDataObj.name + "</h3><span class='task-type'>" + taskDataObj.type + "</span>";
     listItemEl.appendChild(taskInfoEl);
-    
+
     // add entire list item to list
     tasksToDoEl.appendChild(listItemEl);
 
